@@ -24,7 +24,7 @@ import { RecipeDetailComponent } from './recipes/recipe-detail/recipe-detail.com
   ],
   imports: [
     BrowserModule,
-    FormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
