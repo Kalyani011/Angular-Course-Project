@@ -1,9 +1,10 @@
-<app-header (selectedTab)="switchTab($event)"></app-header>
+<app-header></app-header>
 <div class="container">
-  <div class="row">
-    <div class="col-md-12">
-      <app-recipes *ngIf="tabName === 'recipes'"></app-recipes>
-      <app-shopping-list *ngIf="tabName === 'shoppingList'"></app-shopping-list>
+    <div class="row">
+        <div class="col-md-12">
+            <!-- <app-recipes *ngIf="tabName === 'recipes'"></app-recipes>
+      <app-shopping-list *ngIf="tabName === 'shoppingList'"></app-shopping-list> -->
+            <router-outlet></router-outlet>
+        </div>
     </div>
-  </div>
 </div>

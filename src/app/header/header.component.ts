@@ -1,4 +1,4 @@
-import { Component, Output, EventEmitter } from "@angular/core";
+import { Component} from "@angular/core";
 
 @Component({
   selector: 'app-header',
@@ -7,9 +7,4 @@ import { Component, Output, EventEmitter } from "@angular/core";
 
 export class HeaderComponent {
   collapsed = true;
-  @Output('selectedTab') selectedTab = new EventEmitter<string>();
-
-  switchTab(tabName:string) {    
-    tabName === 'recipes' || tabName === 'shoppingList' ? this.selectedTab.emit(tabName) : this.selectedTab.emit('recipes');
-  }
 }
